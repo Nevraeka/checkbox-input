@@ -41,7 +41,6 @@
           }
 
           connectedCallback() {
-            if (window.ShadyCSS) ShadyCSS.styleElement(this);
             if (this._root === null) {
               if (!!this.attachShadow) {
                 this._root = this.attachShadow({ mode: "open" });
