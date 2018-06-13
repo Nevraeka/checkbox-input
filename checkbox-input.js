@@ -41,6 +41,7 @@
           }
 
           connectedCallback() {
+            if (window.ShadyCSS) ShadyCSS.styleElement(this);
             if (this._root === null) {
               if (!!this.attachShadow) {
                 this._root = this.attachShadow({ mode: "open" });
@@ -62,6 +63,7 @@
     }
     
     function render() {
+      if (window.ShadyCSS) ShadyCSS.styleElement(this);
       if (!!this._root) {
         let $template = document.createElement("template");
         $template.id = 'checkbox-input-template';
@@ -82,6 +84,10 @@
 
             .checkbox_input__input {
               cursor: pointer;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              border-color: rgba(255,255,255,0);
+              outline-color: rgba(255,255,255,0);
               top: 0px;
               left: 0px;
               margin: 0;
@@ -137,11 +143,9 @@
             ::slotted(*) {
               line-height: 24px;
             }
-            ::slotted(.checkbox_input__label){
-              padding: 0 0 0 0.5rem;
-            }
-            ::slotted(:first-child) {
-              display: block;
+            
+            ::slotted(*) {
+              display: inline-block;
               padding: 0 0 0 0.5rem;
             }
           </style>
@@ -153,6 +157,7 @@
           </svg>
           <slot></slot>
         `;
+        if (window.ShadyCSS) ShadyCSS.prepareTemplate($template, 'checkbox-input');
         this._root.appendChild(document.importNode($template.content, true));
         this._root.querySelector('input').addEventListener('click', onClickHandler.bind(this));
       
