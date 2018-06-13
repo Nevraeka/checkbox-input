@@ -75,7 +75,7 @@
               align-items: center;
               height: 24px;
               width: 100%;
-              margin: 0;
+              margin: 5px 0;
               padding: 0;
               font-weight: 300;
               font-family: 'Roboto', sans-serif;
