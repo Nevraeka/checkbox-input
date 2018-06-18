@@ -82,6 +82,7 @@
             }
 
             .checkbox_input__input {
+              outline: 0;
               cursor: pointer;
               -webkit-appearance: none;
               -moz-appearance: none;
