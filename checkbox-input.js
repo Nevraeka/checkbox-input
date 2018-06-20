@@ -101,7 +101,7 @@
             .checkbox_input__input:before {
               content: "";
               position: absolute;
-              top: -1px;
+              top: calc(50% - calc(.5rem + 1px));
               border-radius: 4px;
               display: block;
               width: 1rem;
