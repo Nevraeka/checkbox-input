@@ -101,7 +101,7 @@
             .checkbox_input__input:before {
               content: "";
               position: absolute;
-              top: calc(calc(50% - .5rem) + 2px);
+              top: calc(calc(50% - .5rem) + 1px);
               border-radius: 4px;
               display: block;
               width: 1rem;
@@ -122,7 +122,7 @@
             .checkbox_input__icon {
               height: 1rem;
               width: 1rem;
-              margin: -5px 0 0 0;
+              margin: 0;
               padding: 0;
               border: 2px solid #3777bc;
               border-radius: 4px;
