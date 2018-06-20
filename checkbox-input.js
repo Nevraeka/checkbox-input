@@ -73,12 +73,11 @@
               cursor: pointer;
               display: flex;
               align-items: center;
-              height: 24px;
               width: 100%;
               margin: 5px 0;
               padding: 0;
               font-weight: 300;
-              font-family: 'Roboto', sans-serif;
+              font-family: inherit;
             }
 
             .checkbox_input__input {
@@ -139,14 +138,6 @@
               opacity: 1;
               transform: scale3d(1,1,1);
               transition: opacity 0.35s, transform 0.35s;
-            }
-            ::slotted(*) {
-              line-height: 24px;
-            }
-            
-            ::slotted(*) {
-              display: inline-block;
-              padding: 0 0 0 0.5rem;
             }
           </style>
           <input class="checkbox_input__input" type="checkbox" />
