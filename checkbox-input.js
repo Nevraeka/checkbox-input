@@ -88,7 +88,7 @@
               -moz-appearance: none;
               border-color: rgba(255,255,255,0);
               outline-color: rgba(255,255,255,0);
-              top: calc(50% - calc(.5rem + 4px));
+              top: calc(calc(50% - .5rem) + 2px);
               left: 0px;
               margin: 0;
               padding: 0;
@@ -101,7 +101,7 @@
             .checkbox_input__input:before {
               content: "";
               position: absolute;
-              top: calc(50% - calc(.5rem + 4px));
+              top: calc(calc(50% - .5rem) + 2px);
               border-radius: 4px;
               display: block;
               width: 1rem;
