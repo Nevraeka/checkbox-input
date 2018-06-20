@@ -87,7 +87,7 @@
               -moz-appearance: none;
               border-color: rgba(255,255,255,0);
               outline-color: rgba(255,255,255,0);
-              top: 0px;
+              top: 11%;
               left: 0px;
               margin: 0;
               padding: 0;
@@ -139,6 +139,7 @@
               transform: scale3d(1,1,1);
               transition: opacity 0.35s, transform 0.35s;
             }
+
           </style>
           <input class="checkbox_input__input" type="checkbox" />
           <svg preserveAspectRatio="xMidYMid meet" class="checkbox_input__icon" display="checkmark" viewBox="0 0 24 24">
