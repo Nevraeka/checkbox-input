@@ -78,6 +78,7 @@
               padding: 0;
               font-weight: 300;
               font-family: inherit;
+              font-size: inherit;
             }
 
             .checkbox_input__input {
@@ -87,7 +88,7 @@
               -moz-appearance: none;
               border-color: rgba(255,255,255,0);
               outline-color: rgba(255,255,255,0);
-              top: 11%;
+              top: calc(50% - 1rem);
               left: 0px;
               margin: 0;
               padding: 0;
