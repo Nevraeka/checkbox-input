@@ -88,7 +88,7 @@
               -moz-appearance: none;
               border-color: rgba(255,255,255,0);
               outline-color: rgba(255,255,255,0);
-              top: calc(calc(50% - .5rem) + 2px);
+              top: calc(calc(50% - .5rem) - 5px);
               left: 0px;
               margin: 0;
               padding: 0;
